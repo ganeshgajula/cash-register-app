@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>cash register</title>
+  </head>
+  <body>
+    <header>
+      <h1>Cash Register Management</h1>
+    </header>
+
+    <main>
+      <section id="formContent">
+        <h4>Enter bill Amount</h4>
+        <input
+          type="number"
+          id="billAmount"
+          required
+          placeholder="Enter bill amount"
+        />
+        <h4>Enter cash given by user</h4>
+        <input
+          type="number"
+          id="cashGiven"
+          required
+          placeholder="Enter cash given"
+        />
+        <button id="submit">Submit</button>
+      </section>
+
+      <section>
+        <ul class="non-bullet-list">
+          <li>2000</li>
+          <li class="notesCount"></li>
+          <li>500</li>
+          <li class="notesCount"></li>
+          <li>200</li>
+          <li class="notesCount"></li>
+          <li>100</li>
+          <li class="notesCount"></li>
+          <li>50</li>
+          <li class="notesCount"></li>
+          <li>20</li>
+          <li class="notesCount"></li>
+          <li>10</li>
+          <li class="notesCount"></li>
+          <li>5</li>
+          <li class="notesCount"></li>
+          <li>2</li>
+          <li class="notesCount"></li>
+          <li>1</li>
+          <li class="notesCount"></li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

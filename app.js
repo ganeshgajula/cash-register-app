@@ -35,9 +35,11 @@ function clickHandler() {
   } else if (billAmount > 0 && cashGiven > 0 && remainingAmount === 0) {
     alert("Thank you! you paid the exact amount");
   } else if (billAmount === "" && cashGiven === "") {
-    alert("Please enter the billed amount and cash given by the customer");
+    alert("Please enter the billed amount and cash paid by the customer");
   } else if (billAmount !== "" && cashGiven === "") {
-    alert("Please enter the amount of cash given by the customer");
+    alert("Please enter the amount of cash paid by the customer");
+  } else if (billAmount === "" && cashGiven !== "") {
+    alert("Please enter the bill amount");
   } else {
     alert("Cash paid is less than the billed amount");
   }

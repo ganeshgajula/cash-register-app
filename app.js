@@ -40,6 +40,8 @@ function clickHandler() {
     alert("Please enter the amount of cash paid by the customer");
   } else if (billAmount === "" && cashGiven !== "") {
     alert("Please enter the bill amount");
+  } else if (billAmount === 0 || cashGiven === 0) {
+    alert("Value cannot be 0");
   } else {
     alert("Cash paid is less than the billed amount");
   }
